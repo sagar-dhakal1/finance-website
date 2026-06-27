@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sagar — Finance and Fiction</title>
+<meta name="description" content="Personal website of Sagar, an Accounting & Finance student. Notes, projects, research, and books — learning in public." />
+<meta property="og:title" content="Sagar — Finance and Fiction" />
+<meta property="og:description" content="An Accounting & Finance student documenting what he's reading, learning, and building." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker" id="ticker"></div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">Sagar<span class="muted">.dev</span></span>
+      <span class="brand-tag mono">// Finance &amp; Fiction</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#books">Books</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="chart-backdrop" aria-hidden="true">
+    <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#34d399" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M0,300 L80,260 L160,280 L240,210 L320,230 L400,170 L480,200 L560,140 L640,165 L720,100 L800,135 L880,80 L960,110 L1040,55 L1120,90 L1200,40 L1200,400 L0,400 Z" fill="url(#g1)"/>
+      <path d="M0,300 L80,260 L160,280 L240,210 L320,230 L400,170 L480,200 L560,140 L640,165 L720,100 L800,135 L880,80 L960,110 L1040,55 L1120,90 L1200,40" fill="none" stroke="#34d399" stroke-width="1.5"/>
+      <path class="dash" d="M0,330 L100,320 L200,340 L300,300 L400,310 L500,270 L600,290 L700,250 L800,265 L900,225 L1000,245 L1100,200 L1200,215" fill="none" stroke="#fbbf24" stroke-width="1"/>
+      <g fill="#34d399">
+        <circle cx="320" cy="230" r="2.5" class="pulse"/>
+        <circle cx="720" cy="100" r="2.5" class="pulse"/>
+        <circle cx="1040" cy="55" r="2.5" class="pulse"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container hero-inner">
+    <p class="eyebrow"><span class="dot pulse"></span> Sagar · Finance &amp; Fiction</p>
+    <h1 class="hero-title">
+      Hi, I'm Sagar.
+      <span class="accent">I study finance and fall in love with fiction.</span>
+    </h1>
+    <p class="hero-sub">
+      I document what I'm reading, learning, and building as I explore how capital,
+      companies, and stories shape the world. This site is my slowly-growing digital garden.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#projects">View Projects →</a>
+      <a class="btn btn-ghost" href="#research">Read Research</a>
+    </div>
+
+    <dl class="stats">
+      <div><dt>Projects</dt><dd>12</dd></div>
+      <div><dt>Books / yr</dt><dd>34</dd></div>
+      <div><dt>Companies studied</dt><dd>48</dd></div>
+      <div><dt>Years learning</dt><dd>3</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="eyebrow">01 / About</p>
+    <h2 class="section-title">Learning how capital, companies, and code shape the world.</h2>
+    <div class="about-grid">
+      <div class="prose">
+        <p>I'm an undergraduate studying <strong>Accounting &amp; Finance</strong>, with a research habit that started long before my first class. What began as curiosity about how businesses make money has turned into a daily practice — reading 10-Ks, modeling companies in Excel, and writing notes to think out loud.</p>
+        <p>My goal is to become a thoughtful capital allocator. The path I'm choosing for now: build deep fundamentals in accounting, sharpen judgment through writing, and stay technically literate as software eats every industry I want to invest in.</p>
+      </div>
+      <aside class="card">
+        <p class="kicker">Quick facts</p>
+        <dl class="facts">
+          <div><dt>Program</dt><dd>B.B.A · Accounting &amp; Finance</dd></div>
+          <div><dt>Year</dt><dd>Third year</dd></div>
+          <div><dt>Toolkit</dt><dd>Excel · Python · SQL</dd></div>
+          <div><dt>Languages</dt><dd>English, Nepali, Hindi</dd></div>
+          <div><dt>Location</dt><dd>Kathmandu, NP</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">02 / Focus</p>
+    <h2 class="section-title">What I love exploring</h2>
+    <div class="grid-4" id="interests"></div>
+  </div>
+</section>
+
+<!-- CURIOSITY -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">03 / Threads</p>
+    <h2 class="section-title">Questions I'm chasing</h2>
+    <div class="chips" id="chips"></div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE GARDEN -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">04 / Knowledge Garden</p>
+    <h2 class="section-title">How the ideas connect</h2>
+    <div class="garden card" id="garden">
+      <svg id="garden-svg" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">05 / Projects</p>
+    <h2 class="section-title">Models, dashboards, and research artifacts</h2>
+    <div class="grid-3" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="eyebrow">06 / Experience</p>
+    <h2 class="section-title">Where I've learned by doing</h2>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="section">
+  <div class="container">
+    <p class="eyebrow">07 / Research</p>
+    <h2 class="section-title">Essays on markets, companies, and ideas</h2>
+    <div class="list" id="research-list"></div>
+  </div>
+</section>
+
+<!-- BOOKS -->
+<section id="books" class="section">
+  <div class="container">
+    <p class="eyebrow">08 / Books</p>
+    <h2 class="section-title">A compounding library</h2>
+    <div class="grid-3" id="books-grid"></div>
+  </div>
+</section>
+
+<!-- LEARNING -->
+<section id="learning" class="section">
+  <div class="container">
+    <p class="eyebrow">09 / Learning</p>
+    <h2 class="section-title">Currently learning</h2>
+    <div class="grid-3" id="learning-grid"></div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">10 / Marginalia</p>
+    <h2 class="section-title">Lines I keep coming back to</h2>
+    <div class="card quote-card">
+      <div class="quote-mark">"</div>
+      <blockquote id="quote">
+        <p id="quote-text"></p>
+        <footer id="quote-author" class="mono"></footer>
+      </blockquote>
+      <div class="quote-dots" id="quote-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="eyebrow">11 / Contact</p>
+    <h2 class="section-title">Let's talk markets, companies, or ideas.</h2>
+    <p class="hero-sub">Open to internships, research collaborations, and unhurried conversation.</p>
+    <div class="grid-2" id="contact-grid"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="mono muted">© <span id="year"></span> Sagar · Finance &amp; Fiction</p>
+    <p class="mono muted">Built with HTML, CSS, JS · Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
